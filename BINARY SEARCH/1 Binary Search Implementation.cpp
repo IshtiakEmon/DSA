@@ -6,7 +6,7 @@ int binarySearch(int arr[],int n,int key) {
     int low = 0;
     int high = n-1;
 
-//  int mid= (low+ high)/2;
+//  int mid= (low+ high)/2; // This  may cause overflow for bigger data.
     int  mid =  low + (high -low)/2;
 
     /* OVERFLOW !!!!!
@@ -76,6 +76,7 @@ int main() {
    int arr[6]={1,4,6,10,15,18};
 
    int ans = binarySearch(arr,6,18);
+    // I have tested the code for multiple testcases. For every test case it worked properly. 
    cout<<ans<<endl;
 
 
