@@ -21,21 +21,26 @@ int main() {
     return 0;
 }
 
-/*
+/* 
+    // The Basic way to print the fibonacci series  0 1 1 2 3 5 8 13 21 .................n 
+    
+    int range;
+    cin>>range;
+    
     int first = 0;
     int second =1;
+    
     cout<<first<<" "<<second<<" ";
+    
     int ans = 0;
 
-    for(int i =1 ;i<=10;i++)
+    for(int i =1 ;i<=range ;i++)
     {
         int ans = first + second ;
         cout<<ans<<" ";
 
         first = second;
-
         second = ans ;
     }
-
 
 */
