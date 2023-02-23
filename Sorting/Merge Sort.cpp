@@ -105,8 +105,10 @@ int main() {
     {
         cin>>arr[i];
     }
-
+    cout<<"Array Before Sorting"<<endl;
+    printArray(arr,0,n);
     mergesort(arr,0,n-1);
+    cout<<"Array After Sorting"<<endl;
     printArray(arr,0,n);
 
 
